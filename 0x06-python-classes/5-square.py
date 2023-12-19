@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # 5-square.py
-# Brennan D Baraban <375@holbertonschool.com>
+# Obasi Sunday <sundayobasi222@gmail.com>
 """Define a class Square."""
 
 
