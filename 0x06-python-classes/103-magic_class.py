@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 # 103-magic_calculation.py
 # Obasi Sunday
-"""Define a MagicClass matching exactly 
-a bytecode
- provided by Holberton."""
+"""Define a MagicClass matching exactly a bytecode provided by Holberton."""
 
 import math
 
@@ -15,8 +13,7 @@ class MagicClass:
         """Initialize a MagicClass.
 
         Arg:
-            radius (float or int): The radius of 
-            the new MagicClass.
+            radius (float or int): The radius of the new MagicClass.
         """
         self.__radius = 0
         if type(radius) is not int and type(radius) is not float:
