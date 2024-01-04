@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-class Rectangle:
-    """ Empty class """
+class Rectangle(object):
+    """Rectangle: Define new class"""
     pass
