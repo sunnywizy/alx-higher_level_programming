@@ -209,4 +209,4 @@ class Rectangle:
             new instance of class with equal sides
 
         """
-        return cls(size, size)
+        return cls (size, size)
