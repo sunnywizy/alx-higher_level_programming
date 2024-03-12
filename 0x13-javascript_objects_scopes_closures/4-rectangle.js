@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-// Prints a Rectangle with the parameters passed
+// - Rotate and Double the width and height of the Rectangle
 
 module.exports = class Rectangle {
   constructor (width, height) {
@@ -10,17 +10,26 @@ module.exports = class Rectangle {
     }
   }
 
-  print () {
+  print (char = 'X') {
     for (let i = 0; i < this.height; ++i) {
       let s = 0;
 
       for (; s < this.width; ++s) {
-        process.stdout.write('X');
+        process.stdout.write(char);
       }
 
       if (s === this.width) {
         console.log('');
       }
     }
+  }
+
+  rotate () {
+    [this.width, this.height] = [this.height, this.width];
+  }
+
+  double () {
+    this.width *= 2;
+    this.height *= 2;
   }
 };
