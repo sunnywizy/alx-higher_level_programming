@@ -1,8 +1,8 @@
 #!/usr/bin/node
 
-const files = require('files');
-let contents = '';
+const fs = require('fs');
+let content = '';
 
-contents = contents.concat(files.readFileSync(process.argv[2]));
-contents = contents.concat(files.readFileSync(process.argv[3]));
-files.writeFileSync(process.argv[4], contents);
+content = content.concat(fs.readFileSync(process.argv[2]));
+content = content.concat(fs.readFileSync(process.argv[3]));
+fs.writeFileSync(process.argv[4], content);
